@@ -2,6 +2,7 @@
 - Recently I have been working on automated text files translation which will reduce the manual google translation process. Although there are numerous libraries out there that can perform similar task as this, I would like to share my work with the GitHub community. In this repository, I have prepared the required dependencies for the automated Google Translation process using Selenium library.
 
 ## Steps of Google Translation using Selenium
+  0. Install requirements by "pip install -r requirements.txt"
   1. Put the text files to be translated into the docs folder
   2. Check the GoogleTranslate.py and change the source and destination languages to be performed.
   3. Run GoogleTranslate.py.
