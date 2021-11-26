@@ -36,10 +36,10 @@ for i in tqdm(range(len(dir_list))):
 
     # just wait for some time for translating input text:=>
     # time.sleep(0.5)
-    WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.XPATH, '/html/body/c-wiz/div/div[2]/c-wiz/div[2]/c-wiz/div[1]/div[2]/div[2]/c-wiz[2]/div[5]/div/div[1]'))).text
+    WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.XPATH, '//span[@jsname="W297wb"]'))).text
 
     # Given below x path contains the translated output that we are storing in output variable:=>
-    output1 = browser.find_element(By.XPATH, '/html/body/c-wiz/div/div[2]/c-wiz/div[2]/c-wiz/div[1]/div[2]/div[2]/c-wiz[2]/div[5]/div/div[1]').text
+    output1 = browser.find_element(By.XPATH, '//span[@jsname="W297wb"]').text
 
     with open(output_path + '\\' + dir_list[i], 'w') as file:
         file.write(output1)
